@@ -1,0 +1,37 @@
+body{
+    background-color: burlywood;
+    text-align: center;
+}
+.container{
+    padding: 50px 100px 50px 100px;
+    background-color: cornsilk;
+    width: 40%;
+    margin: 50px auto;
+    text-align: start;
+}
+.btn-bg{
+    background-color: rgb(0, 152, 212);
+    padding: 3px;
+    width: fit-content;
+    height: fit-content;
+    text-align: center; 
+    margin: 20px auto;
+}
+#btn-style{
+    padding: 5px 10px;
+    background-color: rgb(42, 248, 169);
+    color: white;
+    
+}
+#quote{
+    color: rgb(88, 88, 88);
+}
+#name{
+    color: rgb(75, 209, 209);
+    text-align: end;
+}
+h4 img{
+    width: 20%;
+}
+
+
