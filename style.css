@@ -33,5 +33,8 @@ body{
 h4 img{
     width: 20%;
 }
+#quote2, #quote3, #quote4, #quote5{
+    display: none;
+}
 
 

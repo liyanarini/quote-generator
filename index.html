@@ -15,9 +15,32 @@
             <div class="btn-bg">
             <button id="btn-style">Generate Quote</button>
             </div>
-        
-            <h4 id="quote" > <span><img src="unnamed.png" alt=""></span> Life is like a landscape. You live in the midst of it but can describe it only from the vantage point of distance.</h4>
-           <p id="name">Charles Lindbergh</p>
+            <div id="quote-area">
+            <h4 > <span><img src="unnamed.png" alt=""></span> <span id="quote"> Life is like a landscape. You live in the midst of it but can describe it only from the vantage point of distance.</span></h4>
+            <p id="name">Charles Lindbergh</p>
+            </div>
     </div>
+    <script>
+        const button = document.getElementById("btn-style");
+        let quoteArea = document.getElementById("quote");
+        let authorName = document.getElementById("name");
+        
+        
+        let quoteList =  [
+            "Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma – which is living with the results of other people’s thinking",
+            "One Of The Lessons That I Grew Up With Was To Always Stay True To Yourself And Never Let What Somebody Else Says Distract You From Your Goals.",
+            "There Are No Limits To What You Can Accomplish, Except The Limits You Place On Your Own Thinking.",
+            "I Think Goals Should Never Be Easy, They Should Force You To Work, Even If They Are Uncomfortable At The Time. "
+        ];
+        let authorList = [
+            "Steve Jobs","Michelle Obama","Brian Tracy","Michael Phelps"
+        ];
+
+        button.addEventListener("click", function(){
+            var randomNumber =Math.floor(Math.random()*quoteList.length);
+            quoteArea.innerText = quoteList[randomNumber];
+            authorName.innerText = authorList[randomNumber];
+        })
+    </script>
 </body>
 </html>
